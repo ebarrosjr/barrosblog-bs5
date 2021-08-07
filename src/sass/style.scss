@@ -1,11 +1,65 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
+html{
+    background-color: #eeeeee;
+}
 header{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    z-index: 9999;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);    
     #top-info{
         background-color: #222222;
         color: #ffffff;
         padding: 5px 0px;
     }
+    #header{
+        padding: 15px;
+        .logo{
+            height: 80px;
+        }
+    }
+    .bg-cinza{
+        background-color: #ddd;
+        .navbar-toggler{
+            color: #222222;
+            border-color: #222222;
+        }
+        ul, li, a{
+            color: #222222 !important;
+        }
+    }
+    .navbar .megamenu{ padding: 1rem; }
+    @media all and (min-width: 992px) {
+    
+      .navbar .has-megamenu{position:static!important;}
+      .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+    
+    }	
+    @media(max-width: 991px){
+      .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+        overflow-y: auto;
+          max-height: 90vh;
+          margin-top:10px;
+      }
+    }    
 }
-main{}
+main{
+    .fp-tresmais{
+        h3{
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 12px;
+            color: #555;
+        }
+    }
+}
 footer{}

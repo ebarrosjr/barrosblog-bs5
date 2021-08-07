@@ -16,9 +16,15 @@
 
 ## Como usar
 
-Baixe o repositório, descompacte numa pasta, e siga os passos:
+Baixe e use o conteúdo da pasta DIST.
+Você precisará ter o NodeJS e o NPM instalado para fazer alterações.
+Siga os passos:
 
 ```bash
+    # Clone o repo
+    git clone https://github.com/ebarrosjr/barrosblog-bs5 blog
+    # Entre na pasta criada
+    cd blog
     # Instale os requisitos
     npm install
     # Compile o projeto (ele executará em seu navegador na porta 3000)

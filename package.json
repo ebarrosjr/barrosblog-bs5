@@ -1,0 +1,30 @@
+{
+  "name": "bootblog",
+  "version": "1.0.0",
+  "description": "A static HTML 5 and Bootstrap 5 blog template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML5",
+    "SASS",
+    "Bootstrap",
+    "Blog",
+    "Template"
+  ],
+  "author": "ebarrosjr",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.36.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "popper.js": "^1.16.1"
+  }
+}

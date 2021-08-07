@@ -1,4 +1,11 @@
 # BOOTSTRAP Front End
+<img alt="version" src="https://img.shields.io/github/package-json/v/ebarrosjr/barrosblog-bs5" />
+<img alt="size" src="https://img.shields.io/github/repo-size/ebarrosjr/barrosblog-bs5" />
+<img alt="commit" src="https://img.shields.io/github/last-commit/ebarrosjr/barrosblog-bs5" />
+<img alt="issues" src="https://img.shields.io/github/issues/ebarrosjr/barrosblog-bs5" />
+<img alt="stars" src="https://img.shields.io/github/stars/ebarrosjr/barrosblog-bs5" />
+
+
 ## Tecnologias utilizadas
 
 - [Bootstrap 5](https://getbootstrap.com)

@@ -1,6 +1,6 @@
 {
   "name": "bootblog",
-  "version": "1.0.0",
+  "version": "0.0.0dev",
   "description": "A static HTML 5 and Bootstrap 5 blog template",
   "main": "index.html",
   "scripts": {

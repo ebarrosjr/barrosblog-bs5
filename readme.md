@@ -1,5 +1,5 @@
 # BOOTSTRAP Front End
-<img alt="version" src="https://img.shields.io/github/package-json/v/ebarrosjr/barrosblog-bs5" /><img alt="size" src="https://img.shields.io/github/repo-size/ebarrosjr/barrosblog-bs5" /><img alt="commit" src="https://img.shields.io/github/last-commit/ebarrosjr/barrosblog-bs5" /><img alt="issues" src="https://img.shields.io/github/issues/ebarrosjr/barrosblog-bs5" /><img alt="stars" src="https://img.shields.io/github/stars/ebarrosjr/barrosblog-bs5" />
+<img alt="version" src="https://img.shields.io/github/package-json/v/ebarrosjr/barrosblog-bs5" /> <img alt="size" src="https://img.shields.io/github/repo-size/ebarrosjr/barrosblog-bs5" /> <img alt="commit" src="https://img.shields.io/github/last-commit/ebarrosjr/barrosblog-bs5" /> <img alt="issues" src="https://img.shields.io/github/issues/ebarrosjr/barrosblog-bs5" /> <img alt="stars" src="https://img.shields.io/github/stars/ebarrosjr/barrosblog-bs5" />
 
 
 ## Tecnologias utilizadas
@@ -18,8 +18,12 @@
 
 Baixe o repositório, descompacte numa pasta, e siga os passos:
 
+```bash
+    # Instale os requisitos
     npm install
+    # Compile o projeto (ele executará em seu navegador na porta 3000)
     gulp
+```
 
 Feito isso, altere o conteúdo necessário na pasta SRC, ao concluir, copie o conteúdo da pasta DIST para seu servidor.
 

@@ -12,6 +12,10 @@ gulp.task('sass', ()  => {
         .pipe(browserSync.stream());
 });
 
+gulp.task('font-awesome', () => {
+    return gulp.src("./node_modules/@fortawesome/fontawesome-free/webfonts/*").pipe(gulp.dest('./dist/webfonts'));
+})
+
 gulp.task('html', () => {
     return gulp.src("./src/*.html").pipe(gulp.dest('./dist'));
 });
@@ -20,11 +24,11 @@ gulp.task('bootstrap', () => {
     return gulp.src("./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js").pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('js', gulp.series('bootstrap', () => {
+gulp.task('js', () => {
     return gulp.src("./src/js/**/*.js")
             .pipe(uglify())
             .pipe(gulp.dest("./dist/js"));
-}));
+});
 
 gulp.task('start', gulp.series('sass', function() {
 
@@ -37,4 +41,4 @@ gulp.task('start', gulp.series('sass', function() {
     gulp.watch("./src/**/*.html").on('change', gulp.series('html', browserSync.reload));
 }));
 
-gulp.task('default', gulp.series('start'));
+gulp.task('default', gulp.series('font-awesome', 'bootstrap', 'start'));

@@ -3,17 +3,45 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
+$preto: #000000;
+$pretinho: #222222;
+$vermelho: #AA0900;
+$roxo: #A790A5;
+$verde: #78FECF;
+$azulado: #0892A5;
+$marrom: #C9B79C;
+$cinzaVerde: #C6CCB2;
+$background: #E5EAFA;
+$branco: #ffffff;
+
 html{
-    background-color: #eeeeee;
+    background-color: $background;
 }
 header{
-    background-color: #ffffff;
+    background-color: $branco;
     -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
     box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
     z-index: 9999;
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);    
+    .publicidade_topo{
+        position: relative;
+        margin-top: -5px;
+        border: 1px solid black;
+        width: 728px;
+        height: 90px;
+        float: right;
+        .warning{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 1px 5px;
+            background-color: #000;
+            color: #fff;
+            font-size: 9px;
+        }
+    }
     #top-info{
         background-color: #222222;
         color: #ffffff;
@@ -51,6 +79,25 @@ header{
     }    
 }
 main{
+    .fp-destaque {
+        position: relative;
+        #caption{
+            position: absolute;
+            padding: 10px 15px 5px;
+            bottom: 25px;
+            background-color: #00000080;
+            right: 13px;
+            left: 13px;
+            color: #eeeeee;
+            span{
+                font-size: 10px;
+                background-color: #fff;
+                padding: 1px 3px;
+                border-radius: 3px;
+                color: #000;
+            }
+        }
+    }
     .fp-tresmais{
         h3{
             font-size: 16px;
@@ -58,8 +105,57 @@ main{
         }
         p{
             font-size: 12px;
-            color: #555;
+            color: #555 ;
+        }
+        img{
+            border-radius: 10px;
+        }
+        span{
+            font-size: 10px;
+            background-color: #aa0900;
+            padding: 1px 3px;
+            border-radius: 3px;
+            color: white;
+        }
+    }
+    #maislidas{
+        img{
+            border-radius: 15px;
+        }
+        span{
+            font-size: 10px;
+            background-color: #aa0900;
+            padding: 1px 3px;
+            border-radius: 3px;
+            color: white;
+        }
+    }
+    #newsletter{
+        width:100%;
+        background-color: $cinzaVerde;
+        padding: 15px;
+        .col-md-6{
+            position: relative;
+        }
+        .bg-news{
+            position: absolute;
+            left: 12.5%;
+            color: $branco;
+            opacity: 0.3;
+            font-size: 270px;
+            z-index: 1;
+        }
+        .text{
+            position: absolute;
+            margin-top: 15px;
+            z-index: 5;
+            max-width: 100%;
         }
     }
 }
-footer{}
+footer{
+    background-color: $pretinho;
+}
+.text-small{
+    font-size:12px;
+}

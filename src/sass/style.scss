@@ -78,6 +78,23 @@ header{
       }
     }    
 }
+#publicidade-square{
+    position: relative;
+    margin-top: -5px;
+    border: 1px solid black;
+    width: 320px;
+    height: 200px;
+    float: right;
+    .warning{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1px 5px;
+        background-color: #000;
+        color: #fff;
+        font-size: 9px;
+    }
+}
 main{
     .fp-destaque {
         position: relative;

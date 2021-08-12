@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarrosBlog - Bootstrap 5 Version</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <section id="top-info">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <i class="fas fa-cloud-sun"></i> 32°C no RJ
+                    </div>
+                    <div class="col-6 text-end">
+                        <i class="fab fa-twitter mr-2 fa-fw"></i>
+                        <i class="fab fa-linkedin mr-2 fa-fw"></i>
+                        <i class="fab fa-github mr-2 fa-fw"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="header">
+            <img src="img/logo.svg" alt="eBarrosJrBLOG" class="logo" />
+            <div class="publicidade_topo"><span class="warning">PUBLICIDADE</span></div>
+        </section>
+        <nav id="principal" class="navbar navbar-expand-lg bg-cinza">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" href="/">Princial</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/sobre.html"> Sobre o projeto</a></li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Categorias</a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h2><a href="/categorias.html">Categoria #1</a></h2>
+                                        <ul>
+                                            <li>Item #1</li>
+                                            <li>Item #2</li>
+                                            <li>Item #3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h2>Categoria #2</h2>
+                                        <ul>
+                                            <li>Item #1</li>
+                                            <li>Item #2</li>
+                                            <li>Item #3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h2>Categoria #3</h2>
+                                        <ul>
+                                            <li>Item #1</li>
+                                            <li>Item #2</li>
+                                            <li>Item #3</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <h2>Categoria #4</h2>
+                                        <ul>
+                                            <li>Item #1</li>
+                                            <li>Item #2</li>
+                                            <li>Item #3</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/contato.html"> Fale conosco</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Área do assinante </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-address-card fa-fw me-2"></i> Assine</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-lock-open fa-fw me-2"></i> Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="contato">
+            <div class="container-fluid my-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h4>Vamos trocar uma ideia?</h4>
+                        <p class="my-4">Use o formulário ao lado, ou escolha um modo abaixo para um papo suave!
+                        <br />Sobre programação? Pode ser?</p>
+                        <p><i class="fa fa-map-marker"></i> Caixa Postal: 666 <small>CEP: 40.430-519</small> </p>
+                        <p><i class="fa fa-envelope"></i> ebarrosjr@nao_existe.mx <small>Eu vou ler... quando? Um dia</small> </p>
+                        <p><i class="fab fa-whatsapp"></i> +55 99 91234-4321 <small>Não envie propagandas</small> </p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                            <input type="text" name="" required id="" class="form-control" placeholder="Seu nome">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <input type="tel" name="" required id="" class="form-control" placeholder="Seu telefone">
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <input type="email" name="" required id="" class="form-control" placeholder="Seu melhor e-mail">
+                                        </div>
+                                        <div class="col-12 mb-3">
+                                            <textarea name="" required id="" cols="30" rows="10" class="form-control" placeholder="Fale conosco..."></textarea>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit" class="btn btn-dark btn-block"> Enviar </button><br />
+                                            <span class="text-small">Ao enviar, eu aceito os termos de uso e política de privacidade!</span>
+                                        </div>
+                                        <div class="col-6">
+                                            RECAPTCHA
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-md-3">
+                    <img src="img/logo.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 text-light">
+                    <h5>Categorias</h5>
+                    <ul>
+                        <li>Categoria #1</li>
+                        <li>Categoria #2</li>
+                        <li>Categoria #3</li>
+                        <li>Categoria #4</li>
+                        <li>Categoria #5</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-light">
+                    <h5>Menu</h5>
+                    <ul>
+                        <li>O projeto</li>
+                        <li>Fale conosco</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-light">
+                    oi
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

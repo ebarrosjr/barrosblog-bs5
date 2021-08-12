@@ -152,6 +152,24 @@ main{
             max-width: 100%;
         }
     }
+    #contato{
+        h4{
+            color: $vermelho;
+            margin-bottom: 15px;
+        }
+        i {
+            font-size: 35px;
+            float: left;
+            margin-right: 15px;
+            color: $cinzaVerde;
+            width: 35px;
+        }
+        small {
+            display: block;
+            font-size: 11px;
+            color: $roxo;
+        }
+    }
 }
 footer{
     background-color: $pretinho;
